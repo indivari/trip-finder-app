@@ -1,0 +1,25 @@
+<div class="new-location-form">
+    <h1>Share your favourite Trip</h1>
+    <form action="/locations" method="post"> 
+        <label for="">Name of the location</label>
+        <input type="text" name="name">
+
+        <label for="">Description </label>
+        <textarea name="description" id="" cols="30" rows="10"></textarea>
+       
+    
+        <label for="">image url</label>
+        <input type="url" placeholder ="http://...." name="image_url">
+
+         <label for="">City</label>
+         <select name="cities" id="">
+            <option value="Melbourne">Melbourne</option>
+            <option value="Sydney">Sydney</option>
+            <option value="Adelaide">Adelaid</option>
+            <option value="Perth">Perth</option>
+            <option value="Brisbane">Brisbane</option>
+         </select>
+
+        <button>share</button>
+    </form>
+</div>

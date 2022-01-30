@@ -1,0 +1,326 @@
+.header {
+  text-align: center;
+  margin: 0 auto;
+  background-color: lightsalmon;
+  padding: 5px 0px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+}
+
+header h1 {
+  font-weight: bold;
+}
+.header h3 {
+  margin-top: 1px;
+  padding: 0px;
+  font-style: italic;
+}
+
+#logout-btn {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 0px;
+}
+#logout-btn:hover {
+  color: violet;
+  cursor: pointer;
+}
+
+.location {
+  padding: 0 10px;
+}
+
+.location img {
+  width: 500px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border: grey solid 10px;
+  padding-bottom: 50px;
+}
+.location-img img {
+  width: 500px;
+}
+
+/* .cities {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: black;
+  padding: 6px;
+} */
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr;
+  background-color: black;
+  padding: 6px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  color: violet;
+  cursor: pointer;
+}
+
+.details {
+  padding-bottom: 10px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons a,
+.buttons button {
+  background-color: teal;
+  color: white;
+}
+.buttons a {
+  text-decoration: none;
+  padding: 0px;
+}
+.buttons a:hover {
+  color: violet;
+}
+.buttons button {
+  border: none;
+  padding: 20px;
+}
+
+.buttons button:hover {
+  color: violet;
+  cursor: pointer;
+}
+.buttons a,
+.buttons form {
+  display: inline;
+  padding: 20px;
+}
+
+/* .subheader h2,
+h3 {
+  display: inline-block;
+  padding: 20px;
+} */
+
+.subheader-fav-trip-btn a {
+  color: white;
+  text-decoration: none;
+  background-color: teal;
+  padding: 0 5px;
+}
+
+.subheader-fav-trip-btn a:hover {
+  color: violet;
+}
+
+.cities a:hover {
+  color: violet;
+  cursor: pointer;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  border: teal double 1px;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.login-form label {
+  text-align: left;
+  display: block;
+  padding: 5px;
+}
+.login-form,
+input {
+  width: 100%;
+  display: block;
+}
+.login-form button {
+  margin-top: 10px;
+  background-color: teal;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  font-size: 15px;
+}
+
+.login-form button:hover {
+  color: violet;
+  cursor: pointer;
+}
+
+.new-location-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  border: teal solid 2px;
+  padding: 10px;
+}
+
+.new-location-form label {
+  text-align: left;
+  display: block;
+}
+
+.new-location-form input,
+textarea,
+select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+}
+
+.show-container {
+  text-align: center;
+  margin-top: 50px;
+}
+.new-location-form button {
+  background-color: teal;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  font-size: 15px;
+}
+.new-location-form button:hover {
+  color: violet;
+  cursor: pointer;
+}
+.update-location-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  border: teal solid 2px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.update-location-form input,
+textarea,
+select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+}
+
+.update-location-form button {
+  background-color: teal;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  font-size: 15px;
+}
+.update-location-form button:hover {
+  color: violet;
+  cursor: pointer;
+}
+
+.update-location-form label {
+  text-align: left;
+  display: block;
+}
+
+.signup-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  border: teal solid 2px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.signup-form label {
+  text-align: left;
+  display: block;
+}
+.signup-form input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+}
+
+.signup-form button {
+  background-color: teal;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  font-size: 15px;
+}
+
+.signup-form button:hover {
+  color: violet;
+  cursor: pointer;
+}
+
+.session-user-info {
+  font-style: italic;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+}
+
+.trip-finder-footer {
+  text-align: center;
+  margin: 0 auto;
+  background-color: black;
+  color: salmon;
+  height: 50px;
+  margin-top: 50px;
+  padding-top: 5px;
+}
+
+/* ratings styling */
+.rating-container .highlighted {
+  background-color: red;
+}
+
+.rating-container .blank {
+  background-color: grey;
+}
+
+.rating-container div {
+  display: inline;
+  padding: 5px;
+  margin: 5px;
+  background-color: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.rating-container div:hover {
+  color: white;
+}
+
+.rating-container {
+  padding: 20px;
+  color: black;
+}
+
+.user-rating-msg {
+  background-color: black;
+  padding: 5px;
+}
+
+.user-rating-msg a {
+  color: salmon;
+  text-decoration: none;
+  padding: 2px;
+}
+
+.user-rating-msg a:hover {
+  color: violet;
+}

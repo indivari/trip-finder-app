@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World</title>
+  <link rel='stylesheet' href='/stylesheets/main.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/javascripts/application.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <h1>~Trip Finder~</h1>
+        <h3>"A beautiful journey is awaiting for you"</h3>
+    </div>
+
+  <div class="nav-bar">
+      <a href="/melbourne">Melbourne</a>
+      <a href="/sydney">Sydney</a>
+      <a href="/adelaide">Adelaide</a>
+      <a href="/perth">Perth</a>
+      <a href="/brisbane">Brisbane</a>
+
+      <a href="/" id="home-link">Home</a>
+    <a href="/users/new" id="signup-link">sign up</a>
+
+    <%if logged_in? %>
+        <form action="/session" method = "post">
+        <input type="hidden" name = "_method" value = "delete">
+        <button id="logout-btn">Log out</button>
+        </form>
+    <%else%>
+        <a href="/login" id="login-link">login</a>
+    <%end%>
+
+  </div>
+
+   
+    <% if logged_in? %>
+      <div class="session-user-info">
+      <h2>logged in as <%= current_user.name %>...welcome <%= current_user.name%> !</h2>
+      </div>
+    <% end %>
+
+    <div class="subheader-fav-trip-btn">
+    <h3><a href="/locations/new">Share your favourite trip location</a></h3>
+    </div>
+
+    <%= yield %>
+
+    <footer class="trip-finder-footer">&copy; 2022 trip finder -  for more travel inspiration check out : Indi's Page <a href="https://indispage.com/">https://indispage.com</a> </footer>
+
+</body>
+
+</html>

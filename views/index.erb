@@ -1,0 +1,31 @@
+
+
+<div class="subheader"><h2>Top ranked trip locations in <%= city%> now :</h2>
+
+</div>
+<div class="container">
+    <section class="location">
+        <% locations.each do |location|%>
+            <h2>
+            <a href="/location/<%= location['location_id']%>"><%= location['name']%></a>
+            </h2>
+            <p>
+            <h3><%= location['description']%></h3>
+            </p>
+            <img src="<%= location['image_url']%>" alt="<%= location['name']
+            %>">
+            
+            <%if logged_in?%>
+                <div id="rating_container_<%=location['location_id']%>" class="rating-container">Rate this location: </div>
+                <script>
+                    showRatings(rating_container_<%=location['location_id']%>, <%=location['location_id']%>, <%=location['rating']%>)
+                </script>
+                <%else%>
+                    <div class="user-rating-msg">
+                        <a href="/login">login to rate this location</a>
+                    </div>
+            <%end%>
+
+        <%end%>
+    </section>
+</div>

@@ -1,0 +1,28 @@
+<div class="show-container">
+
+<div class="details">
+<h2><%= location['name']%></h2>
+
+<%= location['description']%>
+</div>
+
+
+<div class="location-img">
+    <img src="<%= location['image_url']%>" alt="<%=location['name']%>">
+</div>
+
+<div class="buttons">
+    <a href="/location/<%= location['location_id']%>/edit">Edit this location</a>
+
+    <form action="/location/<%= location['location_id']%>" method="post">
+        <input type="hidden" name = "_method" value="delete">
+        <input type="hidden" name = "location_id" value="<%= location['location_id']%>">
+        <button>Delete this location</button>
+
+    </form>
+    
+    </div>
+</div>
+
+
+

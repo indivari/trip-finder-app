@@ -1,0 +1,27 @@
+
+<div class="update-location-form">
+    <h1>Update Location Details</h1>
+    <form action="/locations/<%= location['location_id']%>" method="post"> 
+    <input type="hidden" name= "_method" value="put">
+        <label for="">Name</label>
+        <input type="text" name="name" value="<%= location['name']%>">
+
+        <label for="">Description </label>
+        <textarea name="description" id="" cols="30" rows="10"><%= location['description']%></textarea>
+
+        <label for="">Image url</label>
+        <input type="url" placeholder ="http://...." name="image_url" value = "<%= location['image_url']%>">
+
+        <label for="">City</label>
+        <select name="cities" id="" value="<%= location['city']%>">
+        <option value="Melbourne">Melbourne</option>
+        <option value="Sydney">Sydney</option>
+        <option value="Adelaide">Adelaid</option>
+        <option value="Perth">Perth</option>
+        <option value="Brisbane">Perth</option>
+        </select>
+
+
+        <button>Update</button>
+    </form>
+</div>
