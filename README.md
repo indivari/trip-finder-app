@@ -18,3 +18,9 @@ A server side CRUD application to view and manage interesting trip locations in 
 - The user can filter trip locations based on the major cities.
 - The user can rate trip locations.
 - Displays trip locations based on the   descending order of user rating.
+
+## Deployment
+
+This app was deployed by using Heroku.
+
+https://nameless-garden-53611.herokuapp.com/
